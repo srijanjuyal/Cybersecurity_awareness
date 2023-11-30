@@ -4,3 +4,6 @@ function email_aware(){
 function psc(){
     window.open("../Subham/index1.html", "_self");
 }
+function enc(){
+    window.open("../Roshan/yourscript.html", "_self");
+}
