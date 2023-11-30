@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Awareness</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <style>
+        body{
+            background-color: rgb(79, 13, 79);
+        }
+        .box{
+            border: solid;
+            align-content: center;
+            background-color: rgb(134, 69, 69);
+            width: fit-content;
+            padding: 25px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            border-radius: 10px;
+            
+        }
+        p,h3{
+            text-align: center;
+            color: aliceblue;
+        }
+        .emailogo{
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            top: -40px;
+            left: calc(50% - 40px);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="4616089.png" class="emailogo">
+        <h3>Email Promotion</h3>
+        <div class="question">
+            <p>Enter an e-mail address</p>
+                <input type="email" id="to" required>
+                <button onclick="sendMail();">Submit</button>
+        </div>
+    </div>
+    <script src="../../credential.js"></script>
+</body>
+</html>
