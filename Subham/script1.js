@@ -6,8 +6,8 @@ function checkPasswordStrength(password) {
     let numCount = [...password].filter(c => /\d/.test(c)).length;
     let specialCount = [...password].filter(c => /[@#$_&-+()/*"':;!]/.test(c)).length;
 
-    if (numCount < 2 || specialCount < 2) {
-        return "Bad";
+    if (numCount <= 3 && specialCount <= 2) {
+        return "Moderate";
     }
 
     // Check for date of birth or phone number pattern
@@ -22,9 +22,7 @@ function checkPasswordStrength(password) {
 }
 
 function test() {
-    let password;
-    console.log("Enter your password: ");
-    password = document.getElementById("pass").value;
+    let password = document.getElementById("pass").value;
 
     let result = checkPasswordStrength(password);
     alert("Password strength: " + result);

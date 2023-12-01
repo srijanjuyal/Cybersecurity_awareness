@@ -7,3 +7,6 @@ function psc(){
 function enc(){
     window.open("../Roshan/yourscript.html", "_self");
 }
+function ros(){
+    window.open("../Roshnee/audit.html", "_self");
+}

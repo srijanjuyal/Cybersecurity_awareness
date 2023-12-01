@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recovery#1</title>
+    <title>Quiz</title>
     <style>
         body{
             background: #51e2f5;
@@ -37,7 +37,6 @@
             border-radius: 15px;
             border-color: black;
             background: #ffa8B6;
-            -webkit-backdrop-filter: blur(100px);
         }
         .class{
             padding-left: 10px;
@@ -57,7 +56,7 @@
             width: 90%;
             margin: auto;
         }
-        .b1{
+        .bb{
             border: solid;
             margin-bottom: 5px;
             padding: 3px;
@@ -66,7 +65,7 @@
             font-weight: bolder;
             
         }
-        .b1:hover{
+        .bb:hover{
             cursor: pointer;
         }
         img{
@@ -76,175 +75,138 @@
             width: 100vw;
             height: 100vh;
             z-index: -1;
+            filter: blur(7px);
         }
     </style>
 </head>
 <body>
-    <img src="signup-image.jpg">
+    <img src="bac.png">
     <div class="box">
         <div class="con">
-            <div class="class">Password Recovery
+            <div class="class">Quiz
                 <p>#1. What is primary goal of an ethical hacker?</p>
             </div>
            <div class="new">
-            <div class="container" required><input type="checkbox" name="sp" id="Football"><span>Avoiding detetction</span></div>
-            <div class="container"required><input type="checkbox" name="sp" id="Cricket"><span>Testing security controls</span></div>
-            <div class="container"required><input type="checkbox" name="sp" id="Badminton"><span>Resolving security vulnerabilities</span></div>
-            <div class="container"required><input type="checkbox" name="sp" id="Table Tennis"><span>Determining return on investment for security measures</span></div>
+            <div class="container" required id="a11"><input type="checkbox" name="sp" id="a1"><span>Avoiding detetction</span></div>
+            <div class="container"required id="a22"><input type="checkbox" name="sp" id="a2"><span>Testing security controls</span></div>
+            <div class="container"required id="a33"><input type="checkbox" name="sp" id="a3"><span>Resolving security vulnerabilities</span></div>
+            <div class="container"required id="a44"><input type="checkbox" name="sp" id="a4"><span>Determining return on investment for security measures</span></div>
            </div>
            <div class="but">
-            <div class="b1">
-                <button onclick="inp()">Next</button>
+            <div class="bb">
+                <button onclick="inp1()">Check</button>
             </div>
            </div>
         </div>
     </div>
     <div class="box">
         <div class="con">
-            <div class="class">Password Recovery
-                <p>#2. What is SQL injection?</p>
+            <div class="class">Quiz
+                <p>#2. With whome should you share your ATM details? </p>
             </div>
            <div class="new">
-            <div class="container" required><input type="checkbox" name="sp" id="Football"><span>its used to spoof or inject false headers in a HTTP request</span></div>
-            <div class="container"required><input type="checkbox" name="sp" id="Cricket"><span>its used in buffer overflow attacks to overwrite memory</span></div>
-            <div class="container"required><input type="checkbox" name="sp" id="Badminton"><span>its used to inject mallicious code to a database server, through a query</span></div>
-            <div class="container"required><input type="checkbox" name="sp" id="Table Tennis"><span>None</span></div>
+            <div class="container" required id="b11"><input type="checkbox" name="sp" id="b1"><span>Assisstant</span></div>
+            <div class="container"required id="b22"><input type="checkbox" name="sp" id="b2"><span>Friends</span></div>
+            <div class="container"required id="b33"><input type="checkbox" name="sp" id="b3"><span>Relatives</span></div>
+            <div class="container"required id="b44"><input type="checkbox" name="sp" id="b4"><span>No-one</span></div>
            </div>
            <div class="but">
-            <div class="b1">
-                <button onclick="inp()">Next</button>
+            <div class="bb">
+                <button onclick="inp2()">Check</button>
             </div>
            </div>
         </div>
     </div>
     <div class="box">
         <div class="con">
-            <div class="class">Password Recovery
-                <p>#3. In which category does compromising confidential information fall?</p>
+            <div class="class">Quiz
+                <p>#3. What is National cyber-crime helpline number?</p>
             </div>
            <div class="new">
-            <div class="container" required><input type="checkbox" name="sp" id="Football"><span>Bug</span></div>
-            <div class="container"required><input type="checkbox" name="sp" id="Cricket"><span>Threat</span></div>
-            <div class="container"required><input type="checkbox" name="sp" id="Badminton"><span>Attack</span></div>
-            <div class="container"required><input type="checkbox" name="sp" id="Table Tennis"><span>Vulnerability</span></div>
+            <div class="container" required id="c11"><input type="checkbox" name="sp" id="c1"><span>1098</span></div>
+            <div class="container"required id="c22"><input type="checkbox" name="sp" id="c2"><span>1930</span></div>
+            <div class="container"required id="c33"><input type="checkbox" name="sp" id="c3"><span>100</span></div>
+            <div class="container"required id="c44"><input type="checkbox" name="sp" id="c4"><span>911</span></div>
            </div>
            <div class="but">
-            <div class="b1">
-                <button onclick="inp()">Next</button>
+            <div class="bb">
+                <button onclick="inp3()">Check</button>
             </div>
            </div>
         </div>
     </div>
     <div class="box">
         <div class="con">
-            <div class="class">Password Recovery
-                <p>#4. Which of the following tool is used in wifi hacking?</p>
+            <div class="class">Quiz
+                <p>#4. Which of the following is an anti-virus program type ?</p>
             </div>
            <div class="new">
-            <div class="container" required><input type="checkbox" name="sp" id="Football"><span>Aircracks-ng</span></div>
-            <div class="container"required><input type="checkbox" name="sp" id="Cricket"><span>Wireshark</span></div>
-            <div class="container"required><input type="checkbox" name="sp" id="Badminton"><span>Norton</span></div>
-            <div class="container"required><input type="checkbox" name="sp" id="Table Tennis"><span>None</span></div>
+            <div class="container" required id="d11"><input type="checkbox" name="sp" id="d1"><span>Kaspersky</span></div>
+            <div class="container"required id="d22"><input type="checkbox" name="sp" id="d2"><span>Quick-Heal</span></div>
+            <div class="container"required id="d33"><input type="checkbox" name="sp" id="d3"><span>Mcafee</span></div>
+            <div class="container"required id="d44"><input type="checkbox" name="sp" id="d4"><span>All of the above</span></div>
            </div>
            <div class="but">
-            <div class="b1">
-                <button onclick="inp()">Next</button>
+            <div class="bb">
+                <button onclick="inp4()">Check</button>
             </div>
            </div>
         </div>
     </div>
     <div class="box">
         <div class="con">
-            <div class="class">Password Recovery
+            <div class="class">Quiz
                 <p>#5. Which of the following is not a common method used in ethical hacking?</p>
             </div>
            <div class="new">
-            <div class="container" required><input type="checkbox" name="sp" id="Football"><span>Social engineering</span></div>
-            <div class="container"required><input type="checkbox" name="sp" id="Cricket"><span>Penetration testing</span></div>
-            <div class="container"required><input type="checkbox" name="sp" id="Badminton"><span>SQL injection</span></div>
-            <div class="container"required><input type="checkbox" name="sp" id="Table Tennis"><span>Denial of service attack</span></div>
+            <div class="container" required id="e11"><input type="checkbox" name="sp" id="Football"><span>Social engineering</span></div>
+            <div class="container"required id="e22"><input type="checkbox" name="sp" id="Cricket"><span>Penetration testing</span></div>
+            <div class="container"required id="e33"><input type="checkbox" name="sp" id="Badminton"><span>SQL injection</span></div>
+            <div class="container"required id="e44"><input type="checkbox" name="sp" id="Table Tennis"><span>Denial of service attack</span></div>
            </div>
            <div class="but">
-            <div class="b1">
-                <button onclick="inp()">Next</button>
+            <div class="bb">
+                <button onclick="inp5()">Check</button>
             </div>
            </div>
         </div>
     </div>
     <div class="box">
         <div class="con">
-            <div class="class">Password Recovery
-                <p>#6. What is encryption technique (used to hide)?</p>
+            <div class="class">Quiz
+                <p>#6. What is encryption technique used to hide?</p>
             </div>
            <div class="new">
-            <div class="container" required><input type="checkbox" name="sp" id="Football"><span>contents of message</span></div>
-            <div class="container"required><input type="checkbox" name="sp" id="Cricket"><span>identity of a sender</span></div>
-            <div class="container"required><input type="checkbox" name="sp" id="Badminton"><span>location of a sender</span></div>
-            <div class="container"required><input type="checkbox" name="sp" id="Table Tennis"><span>existance of a message</span></div>
+            <div class="container" required id="f11"><input type="checkbox" name="sp" id="Football"><span>contents of message</span></div>
+            <div class="container"required id="f22"><input type="checkbox" name="sp" id="Cricket"><span>identity of a sender</span></div>
+            <div class="container"required id="f33"><input type="checkbox" name="sp" id="Badminton"><span>location of a sender</span></div>
+            <div class="container"required id="f44"><input type="checkbox" name="sp" id="Table Tennis"><span>existance of a message</span></div>
            </div>
            <div class="but">
-            <div class="b1">
-                <button onclick="inp()">Next</button>
+            <div class="bb">
+                <button onclick="inp6()">Check</button>
             </div>
            </div>
         </div>
     </div>
     <div class="box">
         <div class="con">
-            <div class="class">Password Recovery
-                <p>#7. What is a virtual private network(VPN)?</p>
+            <div class="class">Quiz
+                <p>#7. What is a virtual private network(VPN) do?</p>
             </div>
            <div class="new">
-            <div class="container" required><input type="checkbox" name="sp" id="Football"><span>encrypt network traffic</span></div>
-            <div class="container"required><input type="checkbox" name="sp" id="Cricket"><span>monitor network traffic</span></div>
-            <div class="container"required><input type="checkbox" name="sp" id="Badminton"><span>block network traffic</span></div>
-            <div class="container"required><input type="checkbox" name="sp" id="Table Tennis"><span>analyze system logs</span></div>
+            <div class="container" required id="g11"><input type="checkbox" name="sp" id="Football"><span>encrypt network traffic</span></div>
+            <div class="container"required id="g22"><input type="checkbox" name="sp" id="Cricket"><span>monitor network traffic</span></div>
+            <div class="container"required id="g33"><input type="checkbox" name="sp" id="Badminton"><span>block network traffic</span></div>
+            <div class="container"required id="g44"><input type="checkbox" name="sp" id="Table Tennis"><span>analyze system logs</span></div>
            </div>
            <div class="but">
-            <div class="b1">
-                <button onclick="inp()">Next</button>
+            <div class="bb">
+                <button onclick="inp7()">Check</button>
             </div>
            </div>
         </div>
     </div>
 </body>
-<script>
-    function inp()
-    {
-        sessionStorage.clear();
-        var inpu=document.getElementById("Football");
-        var final="1";
-        if(inpu.checked==true){
-            final=final+"T";
-        }
-        else{
-            final=final+"F";
-        }
-
-        inpu=document.getElementById("Cricket");
-        if(inpu.checked==true){
-            final=final+"T";
-        }
-        else{
-            final=final+"F";
-        }
-        inpu=document.getElementById("Badminton");
-        if(inpu.checked==true){
-            final=final+"T";
-        }
-        else{
-            final=final+"F";
-        }
-
-        inpu=document.getElementById("Table Tennis");
-        if(inpu.checked ==true){
-            final=final+"T";
-        }
-        else{
-            final=final+"F";
-        }
-        var pass=sessionStorage.setItem("rec",final);
-        window.open("../question 2/index.html", "_self");
-    }
-</script>
+<script src="script.js"></script>
 </html>
